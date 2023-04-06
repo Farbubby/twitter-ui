@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Menu</title>
+    <title>Blog</title>
 </head>
 <style>
     .sidebar {
@@ -19,11 +19,10 @@
         padding: 5px;
     }
 
-    .options {
+    .icons {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 85px;
+        gap: 75px;
         justify-content: space-evenly;
     }
 
@@ -32,18 +31,36 @@
     }
 
     .logo {
-        margin-bottom: 10px;
-        width: 70px;
+        width: 20px;
     }
 
     .extend {
         margin-top: 10px;
-        margin-bottom: 125px;
+        margin-bottom: 135px;
+    }
+
+    .extend2 {
+        width: 30px;
     }
 
     .socials {
         display: grid;
-        margin-top: 125px;
+        grid-template-columns: 20px 20px;
+        grid-template-rows: 20px 20px;
+        row-gap: 10px;
+        column-gap: 10px;
+        margin-top: 155px;
+    }
+
+    .post {
+        display: flex;
+        border-radius: 20px;
+        position: absolute;
+        border: 1px black solid;
+        width: 1000px;
+        height: 600px;
+        top: 70px;
+        left: 120px;
     }
 
     body {
@@ -53,15 +70,19 @@
 </style>
 <body>
     <div class="sidebar">
-        <div class="extend"><img class="images" src="click.png" alt="Extend"></div>
-        <div class="options">
+        <div class="extend"><img class="extend2" src="click.png" alt="Extend"></div>
+        <div class="icons">
             <div><img class="images" src="house.png" alt="House"></div>
             <div><img class="images" src="folder.png" alt="Folder"></div>
             <div><img class="images" src="person.png" alt="About"></div>
         </div>
         <div class="socials">
-            
+            <img class="logo" src="facebook.png" alt="Facebook">
+            <img class="logo" src="github.png" alt="Github">
+            <img class="logo" src="instagram.png" alt="Instagram">
+            <img class="logo" src="twitter.png" alt="Twitter">
         </div>
     </div>
+    <div class="post"></div>
 </body>
 </html>
