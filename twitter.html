@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Twitter UI</title>
 </head>
 <style>
     .sidebar {
@@ -56,7 +56,7 @@
     .timeline {
         display: grid;
         border-right: 1px #5A5A5A solid;
-        grid-template-rows: 170px 300px 255px;
+        grid-template-rows: 180px 300px 245px;
         grid-template-columns: 750px;
     }
 
@@ -91,6 +91,46 @@
 
     .text {
         width: 650px;
+        margin-top: 5px;
+    }
+
+    .allpics {
+        display: grid;
+        grid-template-columns: 10px 10px;
+        margin-top: 10px;
+        gap: 180px;
+    }
+
+    .picture {
+        height: 110px;
+        border-radius: 10px;
+    }
+
+    .interactingbar {
+        display: flex;
+        margin-top: 10px;
+        color: gray;
+        gap: 65px;
+    }
+
+    .interact {
+        display: flex;
+        font-size: 13px;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .click {
+        width: 22px;
+        height: 20px;
+    }
+    
+    .retweet {
+        height: 50px;
+        width: 650px;
+        border: 1px #5A5A5A solid;
+        border-radius: 10px;
+        margin-top: 10px;
     }
 
     body {
@@ -120,8 +160,10 @@
         <div class="post">
             <div class="pfp"></div>
             <div class="tweet">
-                <span class="nickname">Farbubby <span class="user">@Farbubby 2h</span></span>
-                <span class="text">
+                <div class="nickname">
+                    Farbubby <span class="user">@Farbubby 2h</span>
+                </div>
+                <div class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -129,14 +171,37 @@
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
                     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
                     anim id est laborum.
-                </span>
+                </div>
+                <div class="interactingbar">
+                    <div class="interact">
+                        <img class="click" src="./images/comment.PNG" alt="Comment">
+                        5K
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/retweet.PNG" alt="Like">
+                        2K
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/like.PNG" alt="Like">
+                        15K
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/stats.PNG" alt="Stats">
+                        2.1M
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/save.PNG" alt="Save">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="post">
             <div class="pfp"></div>
             <div class="tweet">
-                <span class="nickname">I love Caleb! <span class="user">@CalebThiccums 20h</span></span>
-                <span class="text">
+                <div class="nickname">
+                    I love Caleb! <span class="user">@CalebThiccums 20h</span>
+                </div>
+                <div class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -144,14 +209,41 @@
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
                     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
                     anim id est laborum.
-                </span>
+                </div>
+                <div class="allpics">
+                    <img class="picture" src="./images/rust.png" alt="Rust">
+                    <img class="picture" src="./images/java.jpg" alt="Java">
+                </div>
+                <div class="interactingbar">
+                    <div class="interact">
+                        <img class="click" src="./images/comment.PNG" alt="Comment">
+                        2K
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/retweet.PNG" alt="Like">
+                        1K
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/like.PNG" alt="Like">
+                        10K
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/stats.PNG" alt="Stats">
+                        1.4M
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/save.PNG" alt="Save">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="post">
             <div class="pfp"></div>
             <div class="tweet">
-                <span class="nickname">Giggle Wishnu <span class="user">@Nigloo 2m</span></span>
-                <span class="text">
+                <div class="nickname">
+                    Giggle Wishnu <span class="user">@Nigloo 2m</span>
+                </div>
+                <div class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -159,7 +251,31 @@
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
                     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
                     anim id est laborum.
-                </span>
+                </div>
+                <div>
+                    <img class="retweet" src="./images/tweet.PNG" alt="Tweet">
+                </div>
+                <div class="interactingbar">
+                    <div class="interact">
+                        <img class="click" src="./images/comment.PNG" alt="Comment">
+                        100
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/retweet.PNG" alt="Like">
+                        567
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/like.PNG" alt="Like">
+                        2.3K
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/stats.PNG" alt="Stats">
+                        13K
+                    </div>
+                    <div class="interact">
+                        <img class="click" src="./images/save.PNG" alt="Save">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
